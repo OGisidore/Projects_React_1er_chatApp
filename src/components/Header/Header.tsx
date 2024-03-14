@@ -6,6 +6,7 @@
 */
 import React, { FC, useEffect } from 'react';
 import './Header.css';
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 
 interface HeaderProps {
@@ -29,9 +30,7 @@ const Header : FC<HeaderProps> = () =>{
       <div className="Header d-flex p-2 justify-content-between">
         <div className="logo">MudeyApp</div>
         <i className="bi-alarm" style={{fontSize: '2rem', color: 'cornflowerblue'}} />
-
-        <i className="bi bi-three-dots-vertical">hello</i>
-         
+        <BsThreeDotsVertical /> 
       </div>
   );
 }
