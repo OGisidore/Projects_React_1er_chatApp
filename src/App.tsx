@@ -17,7 +17,8 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/profil' element={<Profil/>}/>
         <Route path='/login' element={<LoginPage/>}/>
-        <Route path='/reader/:slug' element={<ChatBox/>}/>
+        <Route path='/chat' element={<ChatBox/>}/>
+        {/* <Route path='/reader/:slug' element={<ChatBox/>}/> */}
         {/* <Route path ='/*' element={<ErrorPage/>}/> */}
 
 

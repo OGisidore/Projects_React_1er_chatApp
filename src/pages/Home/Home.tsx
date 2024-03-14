@@ -4,18 +4,18 @@
   App Name : E-commerce with React.Js
   Created At : 13/03/2024 15:18:26
 */
-import React, { FC, useEffect, Fragment, useState } from "react";
+import React, { FC, useEffect, Fragment } from "react";
 // import Loading from '../Loading/Loading';
 import "./Home.css";
 import Header from "../../components/Header/Header";
-import { User } from "../../models/User";
+
 import { data } from "../../components/api/data";
 
 interface HomeProps {}
 
 const Home: FC<HomeProps> = () => {
   // const [state, setState] = useState<any>(null)
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
  
 
   useEffect(() => {

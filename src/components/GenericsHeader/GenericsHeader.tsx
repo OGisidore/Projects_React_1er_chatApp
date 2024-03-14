@@ -29,7 +29,7 @@ const GenericsHeader : FC<GenericsHeaderProps> = ({headerTitle}) =>{
 
   return (
       <div className="GenericsHeader">
-          <div className="Header d-flex p-2 sticky-top justify-content-between align-items-center">
+          <div className="Header d-flex p-2  sticky-top justify-content-between align-items-center">
         <div className="logo"><h1>{headerTitle}</h1></div>
         <div className="bars d-flex align-items-center">
           <BsArrowLeftShort />

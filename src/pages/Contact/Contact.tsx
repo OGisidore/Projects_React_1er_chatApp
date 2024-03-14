@@ -9,6 +9,7 @@ import React, { FC, useEffect,Fragment, useState } from 'react';
 import './Contact.css';
 import GenericsHeader from '../../components/GenericsHeader/GenericsHeader';
 import { data } from '../../components/api/data';
+import { BsCameraReels, BsCameraReelsFill, BsDot, BsFillCameraReelsFill, BsFillCameraVideoFill, BsTelephone, BsTelephoneFill } from 'react-icons/bs';
 
 
 interface ContactProps {
@@ -35,7 +36,7 @@ const Contact : FC<ContactProps> = () =>{
   return (
     <Fragment>
     {
-      <div className="Contact">
+      <div className="Contact container-sm">
         <GenericsHeader headerTitle={title}/>
         
         {
@@ -43,16 +44,19 @@ const Contact : FC<ContactProps> = () =>{
               
               
               return (
-                <div className="discussion pt-1 border-bottom d-flex" key={index}>
-                <div className=" mx-2">
+                <div className="discussion pt-1 border-bottom d-flex justify-content-between" key={index}>
+               <div className="view d-flex">
+               <div className="mx-3">
                    <img src={dat.profilImage} alt={dat.name} className="rounded-circle" height={"60px"} />
                 </div>
                 <div className=" d-flex flex-column justify-content-end">
                   <h2>{dat.name}</h2>
-                  <p>{dat.onLine}</p>
+                  <p className={dat.onLine? "online":""}> <BsDot/>{dat.onLine? "En ligne":"hors ligne"}</p>
                 </div>
-                <div className=" p-3 d-flex align-items-end" >
-                  {dat.message.time}
+               </div>
+                <div className="action p-3 d-flex justify-content-between align-items-center" >
+                  <BsTelephoneFill/> 
+                  <BsFillCameraVideoFill/>
                 </div>
                
       

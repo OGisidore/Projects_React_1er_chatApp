@@ -1,9 +1,11 @@
+import { SEND } from "../../models/action/actions";
+
 export const data = [
   {
     name: "mudey Etudiant",
     email: "mudey@gmail.com",
     tel: +2237373939,
-    onLine:true,
+    onLine:false,
     infos : "",
     profilImage: "assets/images/_6073b1e3-6b7b-425a-b4b9-f6f881786cd5.jpeg",
     // message :"Lorem ipsum dolor, sit amet consectetur elit..."
@@ -11,7 +13,15 @@ export const data = [
       time : "10 : 05",
       content:"Lorem ipsum dolor, sit amet consectetur elit..."
 
+    },
+    
+    discussions:[
+      {
+        status: SEND,
+        
+
     }
+  ]
   },
   {
     name: "mudey formation",
@@ -32,7 +42,7 @@ export const data = [
     name: "dupont Etudiant",
     email: "mudey@gmail.com",
     tel: +2237373939,
-    onLine:true,
+    onLine:false,
     infos : "",
     profilImage: "assets/images/_6073b1e3-6b7b-425a-b4b9-f6f881786cd5.jpeg",
     // message :"Lorem ipsum dolor, sit amet consectetur elit..."
@@ -60,7 +70,7 @@ export const data = [
     name: "de Dieu Etudiant",
     email: "mudey@gmail.com",
     tel: +2237373939,
-    onLine:true,
+    onLine:false,
     infos : "",
     profilImage: "assets/images/_6073b1e3-6b7b-425a-b4b9-f6f881786cd5.jpeg",
     // message :"Lorem ipsum dolor, sit amet consectetur elit..."
@@ -88,7 +98,7 @@ export const data = [
     name: "mudey formation",
     email: "mudey@gmail.com",
     tel: +2237373939,
-    onLine:true,
+    onLine:false,
     infos : "",
     profilImage: "assets/images/_6073b1e3-6b7b-425a-b4b9-f6f881786cd5.jpeg",
     // message :"Lorem ipsum dolor, sit amet consectetur elit..."
@@ -131,7 +141,7 @@ export const data = [
     name: "de Dieu Etudiant",
     email: "mudey@gmail.com",
     tel: +2237373939,
-    onLine:true,
+    onLine:false,
     infos : "",
     profilImage: "assets/images/_6073b1e3-6b7b-425a-b4b9-f6f881786cd5.jpeg",
     // message :"Lorem ipsum dolor, sit amet consectetur elit..."
