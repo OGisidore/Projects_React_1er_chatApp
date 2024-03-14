@@ -16,19 +16,12 @@ interface HomeProps {}
 const Home: FC<HomeProps> = () => {
   // const [state, setState] = useState<any>(null)
   const [loading, setLoading] = useState(true);
-  const [value, setValue] = useState("");
+ 
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const runLocalData = async () => {
-      console.log(data);
-      data.map((dat: any) => {
-        <li>{dat.name}</li>
-      })
-
-      setLoading(false);
-    };
-    
+   
+   
   });
 
   return (
@@ -36,21 +29,31 @@ const Home: FC<HomeProps> = () => {
       {
         <div className="container-sm ">
           <Header />
-          <div className="discussion row">
-            <div className="col-md-3">
-               <img src="assets/images/_6073b1e3-6b7b-425a-b4b9-f6f881786cd5.jpeg" alt="" height={"10rem"} />
-            </div>
-            <div className="col-md-6">
-              <h2>Name</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
-            </div>
-            <div className="col-md-3 align-items-end" >
-              17:00
-            </div>
-           
-
-          </div>
-         
+          {
+            data.map((dat: any,index : number) => {
+              
+              
+              return (
+                <div className="discussion pt-1 border-bottom d-flex" key={index}>
+                <div className=" mx-2">
+                   <img src={dat.profilImage} alt={dat.name} className="rounded-circle" height={"60px"} />
+                </div>
+                <div className=" d-flex flex-column justify-content-end">
+                  <h2>{dat.name}</h2>
+                  <p>{dat.message.content}</p>
+                </div>
+                <div className=" p-3 d-flex align-items-end" >
+                  {dat.message.time}
+                </div>
+               
+      
+              </div>
+              )
+              
+              
+            })
+            
+          }
          
         </div>
       }

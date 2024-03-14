@@ -27,10 +27,12 @@ const Header : FC<HeaderProps> = () =>{
     })
 
   return (
-      <div className="Header d-flex p-2 justify-content-between">
-        <div className="logo">MudeyApp</div>
-        <i className="bi-alarm" style={{fontSize: '2rem', color: 'cornflowerblue'}} />
-        <BsThreeDotsVertical /> 
+      <div className="Header d-flex p-2 sticky-top justify-content-between align-items-center">
+        <div className="logo"><h1>MudeyApp</h1></div>
+        <div className="bars d-flex align-items-center">
+          <BsThreeDotsVertical />
+        </div>
+         
       </div>
   );
 }

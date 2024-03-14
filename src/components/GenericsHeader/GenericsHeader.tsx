@@ -6,14 +6,16 @@
 */
 import React, { FC, useEffect } from 'react';
 import './GenericsHeader.css';
+import { BsArrowLeftShort } from 'react-icons/bs';
 
 
 interface GenericsHeaderProps {
+  headerTitle:string
  
 }
 
 
-const GenericsHeader : FC<GenericsHeaderProps> = () =>{
+const GenericsHeader : FC<GenericsHeaderProps> = ({headerTitle}) =>{
 
 
 
@@ -27,7 +29,13 @@ const GenericsHeader : FC<GenericsHeaderProps> = () =>{
 
   return (
       <div className="GenericsHeader">
-          GenericsHeader Component
+          <div className="Header d-flex p-2 sticky-top justify-content-between align-items-center">
+        <div className="logo"><h1>{headerTitle}</h1></div>
+        <div className="bars d-flex align-items-center">
+          <BsArrowLeftShort />
+        </div>
+         
+      </div>
       </div>
   );
 }
