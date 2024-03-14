@@ -10,7 +10,7 @@ import { BsArrowLeftShort } from 'react-icons/bs';
 
 
 interface GenericsHeaderProps {
-  headerTitle:string
+  headerTitle:any
  
 }
 

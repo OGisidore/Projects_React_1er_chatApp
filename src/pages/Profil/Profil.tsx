@@ -44,7 +44,7 @@ const Profil: FC<ProfilProps> = () => {
             headerTitle={title} />
           
 
-          <div className="content">
+          <div className="contents">
 
             <div className="profilUser d-flex border justify-content-center align-items-center relative">
               <div className="cameraAndImage">

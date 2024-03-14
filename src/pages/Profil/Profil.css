@@ -17,6 +17,7 @@
 
 .profilUser {
   height: 20rem;
+  /* width: 100vw !important; */
 }
 
 .camera {
@@ -29,6 +30,7 @@
   bottom: -5px;
   right: 0;
 }
+
 
 .name {
   font-size: 30px;
