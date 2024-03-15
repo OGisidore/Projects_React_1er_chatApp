@@ -17,7 +17,7 @@ interface ChatBoxProps {
 
 const ChatBox : FC<ChatBoxProps> = () =>{
   const user = data[0]
-  const discussion = user.discussions;
+ 
   
  
 
