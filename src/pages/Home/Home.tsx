@@ -34,7 +34,7 @@ const Home: FC<HomeProps> = () => {
               
               
               return (
-                <div className="discussion pt-1 border-bottom d-flex" key={index}>
+                <div className="discussion py-1 border-bottom d-flex" key={index}>
                 <div className=" mx-2">
                    <img src={dat.profilImage} alt={dat.name} className="rounded-circle" height={"60px"} />
                 </div>
