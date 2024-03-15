@@ -27,7 +27,7 @@ const Home: FC<HomeProps> = () => {
   return (
     <Fragment>
       {
-        <div className="container-sm ">
+        <div className="container-sm p-0">
           <Header />
           {
             data.map((dat: any,index : number) => {
@@ -38,11 +38,11 @@ const Home: FC<HomeProps> = () => {
                 <div className=" mx-2">
                    <img src={dat.profilImage} alt={dat.name} className="rounded-circle" height={"60px"} />
                 </div>
-                <div className=" d-flex flex-column justify-content-end">
+                <div className=" d-flex flex-column px-2 justify-content-end">
                   <h2>{dat.name}</h2>
                   <p>{dat.message.content}</p>
                 </div>
-                <div className=" p-3 d-flex align-items-end" >
+                <div className=" times  d-flex align-items-end" >
                   {dat.message.time}
                 </div>
                

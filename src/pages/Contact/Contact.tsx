@@ -36,7 +36,7 @@ const Contact : FC<ContactProps> = () =>{
   return (
     <Fragment>
     {
-      <div className="Contact container-sm">
+      <div className="Contact container-sm p-0">
         <GenericsHeader headerTitle={title}/>
         
         {

@@ -6,6 +6,8 @@
 */
 
 .Header {
+  position: sticky !important;
+  top: 0;
   background-color: rgb(22, 129, 237) !important;
   color: #fff !important;
 }
