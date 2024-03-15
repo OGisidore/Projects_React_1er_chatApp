@@ -5,15 +5,15 @@
   Created At : 15/03/2024 11:09:42
 */
 import React, { FC, useEffect } from 'react';
-import './Header.css';
+import './ProfilContent.css';
 
 
-interface HeaderProps {
+interface ProfilContentProps {
  
 }
 
 
-const Header : FC<HeaderProps> = () =>{
+const ProfilContent : FC<ProfilContentProps> = () =>{
 
 
 
@@ -26,10 +26,10 @@ const Header : FC<HeaderProps> = () =>{
     })
 
   return (
-      <div className="Header">
-          Header Component
+      <div className="ProfilContent">
+          ProfilContent Component
       </div>
   );
 }
 
-export default Header;
+export default ProfilContent;

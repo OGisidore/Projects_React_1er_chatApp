@@ -5,15 +5,15 @@
   Created At : 15/03/2024 11:09:42
 */
 import React, { FC, useEffect } from 'react';
-import './Header.css';
+import './LoginForm.css';
 
 
-interface HeaderProps {
+interface LoginFormProps {
  
 }
 
 
-const Header : FC<HeaderProps> = () =>{
+const LoginForm : FC<LoginFormProps> = () =>{
 
 
 
@@ -26,10 +26,10 @@ const Header : FC<HeaderProps> = () =>{
     })
 
   return (
-      <div className="Header">
-          Header Component
+      <div className="LoginForm">
+          LoginForm Component
       </div>
   );
 }
 
-export default Header;
+export default LoginForm;

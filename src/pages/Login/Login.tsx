@@ -6,15 +6,15 @@
 */
 import React, { FC, useEffect,Fragment, useState } from 'react';
 // import Loading from '../Loading/Loading';
-import './Home.css';
+import './Login.css';
 
 
-interface HomeProps {
+interface LoginProps {
  
 }
 
 
-const Home : FC<HomeProps> = () =>{
+const Login : FC<LoginProps> = () =>{
 
 
     // const [state, setState] = useState<any>(null)
@@ -36,12 +36,12 @@ const Home : FC<HomeProps> = () =>{
       loading ?
       <Loading />
       :
-      <div className="Home">
-          Home Component
+      <div className="Login">
+          Login Component
       </div>
     }
     </Fragment>
   );
 }
 
-export default Home;
+export default Login;

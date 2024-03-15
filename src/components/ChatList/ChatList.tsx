@@ -5,15 +5,15 @@
   Created At : 15/03/2024 11:09:42
 */
 import React, { FC, useEffect } from 'react';
-import './Header.css';
+import './ChatList.css';
 
 
-interface HeaderProps {
+interface ChatListProps {
  
 }
 
 
-const Header : FC<HeaderProps> = () =>{
+const ChatList : FC<ChatListProps> = () =>{
 
 
 
@@ -26,10 +26,10 @@ const Header : FC<HeaderProps> = () =>{
     })
 
   return (
-      <div className="Header">
-          Header Component
+      <div className="ChatList">
+          ChatList Component
       </div>
   );
 }
 
-export default Header;
+export default ChatList;

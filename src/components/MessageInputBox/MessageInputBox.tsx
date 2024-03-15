@@ -5,15 +5,15 @@
   Created At : 15/03/2024 11:09:42
 */
 import React, { FC, useEffect } from 'react';
-import './Header.css';
+import './MessageInputBox.css';
 
 
-interface HeaderProps {
+interface MessageInputBoxProps {
  
 }
 
 
-const Header : FC<HeaderProps> = () =>{
+const MessageInputBox : FC<MessageInputBoxProps> = () =>{
 
 
 
@@ -26,10 +26,10 @@ const Header : FC<HeaderProps> = () =>{
     })
 
   return (
-      <div className="Header">
-          Header Component
+      <div className="MessageInputBox">
+          MessageInputBox Component
       </div>
   );
 }
 
-export default Header;
+export default MessageInputBox;
