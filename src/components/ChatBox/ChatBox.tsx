@@ -54,7 +54,7 @@ const ChatBox : FC<ChatBoxProps> = () =>{
           <div className="chatInsert py-4 sticky-bottom d-flex align-items-center justify-content-around">
           <BsFillEmojiHeartEyesFill />
 
-            <textarea name="message" id='message' placeholder='type your message ...' className=' px-2 rounded' cols={60} rows={1}></textarea>
+            <textarea name="message" id='message' placeholder='type your message ...' className=' px-2 rounded' cols={100} rows={1}></textarea>
             <BsSendFill />
 
 

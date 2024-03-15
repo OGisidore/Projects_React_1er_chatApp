@@ -38,7 +38,7 @@ const Profil: FC<ProfilProps> = () => {
     <Fragment>
       {
 
-        <div className="Profil container-sm">
+        <div className="Profil p-0 container-sm">
           <GenericsHeader
           
             headerTitle={title} />
