@@ -9,3 +9,7 @@
   background-color: darkgreen;
   color: aliceblue;
 }
+.Icon *{
+  font-size: 2rem;
+  font-weight: bold;
+}

@@ -6,14 +6,23 @@
 */
 import React, { FC, useEffect } from 'react';
 import './ChatList.css';
+import { messages } from '../../Api/messages';
+import { Message } from '../../models/Message';
+import ChatItem from '../ChatItem/ChatItem';
 
 
 interface ChatListProps {
+  
+  lastMessage : Message
  
 }
 
 
-const ChatList : FC<ChatListProps> = () =>{
+const ChatList : FC<ChatListProps> = ({lastMessage}) =>{
+  
+  const Discussion : Message[] = [ ...messages ,lastMessage ]
+  console.log(Discussion);
+  
 
 
 
@@ -26,8 +35,13 @@ const ChatList : FC<ChatListProps> = () =>{
     })
 
   return (
-      <div className="ChatList">
-          ChatList Component
+      <div className="ChatList overflow-auto ">
+         {
+          Discussion.map((message:Message,index:number)=>{
+            return <ChatItem key={index} messageItem={message}/>
+          }
+          )
+         }
       </div>
   );
 }

@@ -6,14 +6,24 @@
 */
 import React, { FC, useEffect } from 'react';
 import './MessageList.css';
+import { messages } from '../../Api/messages';
+import { Message } from '../../models/Message';
+import MessageItem from '../MessageItem/MessageItem';
+import { chats } from '../../Api/chats';
+import { Chat } from '../../models/Chat';
 
 
 interface MessageListProps {
+ 
+
  
 }
 
 
 const MessageList : FC<MessageListProps> = () =>{
+
+
+
 
 
 
@@ -27,7 +37,13 @@ const MessageList : FC<MessageListProps> = () =>{
 
   return (
       <div className="MessageList">
-          MessageList Component
+         {
+          chats.map((message : Chat, index : number)=> {
+            return <MessageItem Item={message}/>
+          }
+        )
+
+         }
       </div>
   );
 }

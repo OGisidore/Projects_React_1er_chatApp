@@ -5,4 +5,7 @@
   Created At : 15/03/2024 11:09:42
 */
 
-.ChatItem {}
+.ChatItem *{
+  width: 70% !important;
+  padding: 1rem;
+}

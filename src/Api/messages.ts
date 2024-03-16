@@ -1,6 +1,6 @@
-import { TypeMessage } from "../models/Message";
+import { Message, TypeMessage } from "../models/Message";
 
-export const messages = [
+export const messages : Message[] = [
     {
       chatId: "chat1",
       content: "Salut, comment ça va ?",
@@ -23,7 +23,7 @@ export const messages = [
     },
     {
       chatId: "chat1",
-      content: "https://example.com/image.jpg",
+      content: "https://cdn.pixabay.com/photo/2024/02/25/10/11/forsythia-8595521_640.jpg",
       type: TypeMessage.IMAGE,
       ownership: "user",
       sender: "John",
@@ -33,7 +33,7 @@ export const messages = [
     },
     {
       chatId: "chat1",
-      content: "Check out this video: https://example.com/video.mp4",
+      content: "https://cdn.pixabay.com/vimeo/191338839/les-abeilles-6341.mp4?width=640&hash=91b311db9dc4634b8bffd86044a9017bf879780c",
       type: TypeMessage.VIDEO,
       ownership: "contact",
       sender: "Jane",
@@ -83,7 +83,7 @@ export const messages = [
     },
     {
       chatId: "chat3",
-      content: "Check out this link: https://example.com",
+      content: "Check out this link: https://google.com",
       type: TypeMessage.TEXT,
       ownership: "user",
       sender: "John",
@@ -93,7 +93,7 @@ export const messages = [
     },
     {
       chatId: "chat3",
-      content: "https://example.com/image2.jpg",
+      content: "https://cdn.pixabay.com/photo/2024/02/25/10/11/forsythia-8595521_640.jpg",
       type: TypeMessage.IMAGE,
       ownership: "contact",
       sender: "Jane",

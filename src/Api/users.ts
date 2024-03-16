@@ -44,7 +44,7 @@ export const users :User[] =  [
           phone: "555-987-6543",
           description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           function: "Marketing Manager",
-          picture: "https://example.com/jane-smith.jpg",
+          picture: "https://cdn.pixabay.com/photo/2024/02/19/18/48/flower-8583970_960_720.jpg",
           hours: "8:30am - 6pm",
           users: "15",
           website: "https://www.xyzcorp.com"
@@ -69,7 +69,7 @@ export const users :User[] =  [
           phone: "555-555-5555",
           description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           function: "Sales Representative",
-          picture: "https://example.com/alice-johnson.jpg",
+          picture: "https://cdn.pixabay.com/photo/2020/07/19/15/42/peony-5420406_640.jpg",
           hours: "10am - 4pm",
           users: "10",
           website: "https://www.xyzcorp.com"
@@ -94,7 +94,7 @@ export const users :User[] =  [
           phone: "555-777-8888",
           description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           function: "Software Engineer",
-          picture: "https://example.com/bob-brown.jpg",
+          picture: "https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492_640.jpg",
           hours: "Flexible",
           users: "5",
           website: "https://www.defcorp.com"
@@ -119,7 +119,7 @@ export const users :User[] =  [
           phone: "555-999-1111",
           description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           function: "Human Resources Manager",
-          picture: "https://example.com/emily-williams.jpg",
+          picture: "https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_640.jpg",
           hours: "9am - 5pm",
           users: "25",
           website: "https://www.ghi-enterprises.com"
@@ -144,7 +144,7 @@ export const users :User[] =  [
           phone: "555-222-3333",
           description: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
           function: "Project Manager",
-          picture: "https://example.com/michael-davis.jpg",
+          picture: "https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_640.jpg",
           hours: "8am - 6pm",
           users: "30",
           website: "https://www.jklsolutions.com"
@@ -169,7 +169,7 @@ export const users :User[] =  [
           phone: "555-444-5555",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           function: "Sales Manager",
-          picture: "https://example.com/sophia-martinez.jpg",
+          picture: "https://cdn.pixabay.com/photo/2016/01/08/11/57/butterflies-1127666_640.jpg",
           hours: "9am - 5pm",
           users: "18",
           website: "https://www.lmn-enterprises.com"
@@ -194,7 +194,7 @@ export const users :User[] =  [
           phone: "555-666-7777",
           description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           function: "Software Developer",
-          picture: "https://example.com/daniel-wilson.jpg",
+          picture: "https://cdn.pixabay.com/photo/2016/02/17/19/08/lotus-1205631_640.jpg",
           hours: "10am - 6pm",
           users: "12",
           website: "https://www.opqsolutions.com"
@@ -219,7 +219,7 @@ export const users :User[] =  [
           phone: "555-888-9999",
           description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           function: "Marketing Director",
-          picture: "https://example.com/olivia-taylor.jpg",
+          picture: "https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_640.jpg",
           hours: "8:30am - 5:30pm",
           users: "22",
           website: "https://www.rstcorp.com"
@@ -244,7 +244,7 @@ export const users :User[] =  [
           phone: "555-222-3333",
           description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           function: "Financial Analyst",
-          picture: "https://example.com/william-anderson.jpg",
+          picture: "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
           hours: "9am - 6pm",
           users: "17",
           website: "https://www.uvwcorp.com"
@@ -269,7 +269,7 @@ export const users :User[] =  [
           phone: "555-111-2222",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           function: "Customer Service Representative",
-          picture: "https://example.com/emma-rodriguez.jpg",
+          picture: "https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492_640.jpg",
           hours: "9am - 5pm",
           users: "20",
           website: "https://www.xyzcorp.com"

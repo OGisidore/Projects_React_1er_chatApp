@@ -28,14 +28,14 @@ const Header : FC<HeaderProps> = ({iconType,pageTitle}) =>{
     })
 
   return (
-      <div className="Header d-flex justify-content-between align-items-center p-2">
+      <div className="Header sticky-top d-flex justify-content-between align-items-center p-2">
           <div className="PageTitle">
 
             {typeof pageTitle === 'string'?
             <h2>{pageTitle}</h2>:
             pageTitle}
           </div>
-          <div className="PageTitle">
+          <div className="Icon">
             {iconType}
           </div>
       </div>
