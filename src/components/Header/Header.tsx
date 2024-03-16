@@ -9,11 +9,13 @@ import './Header.css';
 
 
 interface HeaderProps {
+  iconType:any
+  pageTitle:any
  
 }
 
 
-const Header : FC<HeaderProps> = () =>{
+const Header : FC<HeaderProps> = ({iconType,pageTitle}) =>{
 
 
 
@@ -26,8 +28,16 @@ const Header : FC<HeaderProps> = () =>{
     })
 
   return (
-      <div className="Header">
-          Header Component
+      <div className="Header d-flex justify-content-between align-items-center p-2">
+          <div className="PageTitle">
+
+            {typeof pageTitle === 'string'?
+            <h2>{pageTitle}</h2>:
+            pageTitle}
+          </div>
+          <div className="PageTitle">
+            {iconType}
+          </div>
       </div>
   );
 }

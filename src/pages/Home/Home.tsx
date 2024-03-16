@@ -4,9 +4,10 @@
   App Name : E-commerce with React.Js
   Created At : 15/03/2024 11:06:19
 */
-import React, { FC, useEffect,Fragment, useState } from 'react';
+import React, { FC, useEffect,  } from 'react';
 // import Loading from '../Loading/Loading';
 import './Home.css';
+import Header from '../../components/Header/Header';
 
 
 interface HomeProps {
@@ -18,29 +19,30 @@ const Home : FC<HomeProps> = () =>{
 
 
     // const [state, setState] = useState<any>(null)
-    const [loading, setLoading] = useState(true);
-    const [value, setValue] = useState('');
+    // const [loading, setLoading] = useState(true);
+   
+    const icon = ()=>{
+      return(
+        <div>
+          <BsC
+        three dot</div>
+      )
+    }
 
     useEffect(() => {
       window.scrollTo(0,0)
       const runLocalData = async () => {
      //console.log({usersInfo});
 
-        setLoading(false)
+        // setLoading(false)
       }
       runLocalData()
-    },[value])
+    },[])
 
   return (
-    <Fragment>
-    {
-     
-  
-      <div className="Home">
-          Home Component
-      </div>
-    }
-    </Fragment>
+   
+   <Header iconType={icon()} pageTitle={"MudeyApp"}/>
+    
   );
 }
 
