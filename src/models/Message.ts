@@ -6,6 +6,7 @@ export enum TypeMessage {
   AUDIO,
   PDF,
 }
+
 export interface Message {
   _id?: string;
   chatId: string;
