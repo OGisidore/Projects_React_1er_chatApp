@@ -7,6 +7,7 @@
 import React, { FC, useEffect,Fragment, useState } from 'react';
 // import Loading from '../Loading/Loading';
 import './Home.css';
+import { usersInfo } from '../../Api/profils';
 
 
 interface HomeProps {
@@ -24,6 +25,7 @@ const Home : FC<HomeProps> = () =>{
     useEffect(() => {
       window.scrollTo(0,0)
       const runLocalData = async () => {
+     console.log({usersInfo});
 
         setLoading(false)
       }
@@ -33,9 +35,8 @@ const Home : FC<HomeProps> = () =>{
   return (
     <Fragment>
     {
-      loading ?
-      <Loading />
-      :
+     
+  
       <div className="Home">
           Home Component
       </div>

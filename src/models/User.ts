@@ -9,6 +9,8 @@ export interface User {
   phone: string;
   profile: Profil;
   password: string;
-  created_at: Date;
-  update_at: Date;
+  created_at: Date | string;
+  update_at: Date | string;
 }
+
+

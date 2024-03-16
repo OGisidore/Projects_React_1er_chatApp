@@ -33,9 +33,6 @@ const Contacts : FC<ContactsProps> = () =>{
   return (
     <Fragment>
     {
-      loading ?
-      <Loading />
-      :
       <div className="Contacts">
           Contacts Component
       </div>

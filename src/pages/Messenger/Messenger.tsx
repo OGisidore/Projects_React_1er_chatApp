@@ -33,9 +33,6 @@ const Messenger : FC<MessengerProps> = () =>{
   return (
     <Fragment>
     {
-      loading ?
-      <Loading />
-      :
       <div className="Messenger">
           Messenger Component
       </div>

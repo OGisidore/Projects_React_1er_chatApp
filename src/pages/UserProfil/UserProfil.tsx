@@ -33,9 +33,7 @@ const UserProfil : FC<UserProfilProps> = () =>{
   return (
     <Fragment>
     {
-      loading ?
-      <Loading />
-      :
+      
       <div className="UserProfil">
           UserProfil Component
       </div>

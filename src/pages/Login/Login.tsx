@@ -33,9 +33,6 @@ const Login : FC<LoginProps> = () =>{
   return (
     <Fragment>
     {
-      loading ?
-      <Loading />
-      :
       <div className="Login">
           Login Component
       </div>
