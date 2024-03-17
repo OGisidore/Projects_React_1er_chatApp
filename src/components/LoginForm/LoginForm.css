@@ -5,4 +5,9 @@
   Created At : 15/03/2024 11:09:42
 */
 
-.LoginForm {}
+.LoginForm {
+  height: 90vh;
+}
+form{
+  width: 100%;
+}

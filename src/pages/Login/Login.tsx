@@ -10,6 +10,7 @@ import './Login.css';
 import Header from '../../components/Header/Header';
 import { Link } from 'react-router-dom';
 import { BsArrowLeft } from 'react-icons/bs';
+import LoginForm from '../../components/LoginForm/LoginForm';
 
 
 interface LoginProps {
@@ -38,6 +39,7 @@ const Login : FC<LoginProps> = () =>{
     {
       <div className="Login">
           <Header iconType={<Link to={"/"}><BsArrowLeft/></Link>} pageTitle={"Login"} />
+          <LoginForm/>
       </div>
     }
     </Fragment>
