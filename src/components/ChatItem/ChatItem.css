@@ -5,7 +5,19 @@
   Created At : 15/03/2024 11:09:42
 */
 
-.ChatItem *{
+.ChatItem{
+  background-color: aqua;
   width: 70% !important;
+  margin-top: 1rem;
+}
+.ChatItem *{
+  max-width: 100%;
   padding: 1rem;
+}
+.user{
+  align-self: self-end;
+  max-width: 70%;
+  height: auto;
+  background-color: royalblue;
+  color: #fff;
 }

@@ -12,7 +12,7 @@ import { chats } from '../../Api/chats';
 import { Chat } from '../../models/Chat';
 import { log } from 'util';
 import Header from '../../components/Header/Header';
-import { BsArrowBarLeft, BsArrowLeft } from 'react-icons/bs';
+import { BsArrowBarLeft, BsArrowLeft, BsArrowUpLeft, BsBoxArrowLeft } from 'react-icons/bs';
 import MessageList from '../../components/MessageList/MessageList';
 import ChatList from '../../components/ChatList/ChatList';
 

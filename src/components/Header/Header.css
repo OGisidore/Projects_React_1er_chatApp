@@ -7,9 +7,10 @@
 
 .Header {
   background-color: darkgreen;
-  color: aliceblue;
+  color: aliceblue !important;
 }
 .Icon *{
   font-size: 2rem;
   font-weight: bold;
+  color: aliceblue !important;
 }

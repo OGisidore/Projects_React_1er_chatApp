@@ -58,8 +58,9 @@ const ChatItem: FC<ChatItemProps> = ({ messageItem }) => {
   })
 
   return (
-    <div className={"ChatItem rounded " +( messageItem.ownership === "user")? "align-self-ends":""}>
+    <div className={"ChatItem rounded " + ( messageItem.ownership === "user"? "user":"")}>
       {DisplayMessageByType()}
+      <div className="time">{messageItem.create_at?.toLocaleTimeString()}</div>
 
     </div>
   );

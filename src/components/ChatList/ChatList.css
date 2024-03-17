@@ -5,4 +5,9 @@
   Created At : 15/03/2024 11:09:42
 */
 
-.ChatList {}
+.ChatList {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  max-height: 80vh;
+}

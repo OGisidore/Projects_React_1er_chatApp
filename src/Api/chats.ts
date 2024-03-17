@@ -12,7 +12,7 @@ export const chats: Chat[] = [
              chatId: "chat1",
             content: "Salut, comment ça va ?",
             type: TypeMessage.TEXT,
-            ownership: "user",
+            ownership: "contact",
             sender: "John",
             shared: false,
             create_at: new Date(),
@@ -37,7 +37,7 @@ export const chats: Chat[] = [
         lastMessage: {
             _id:"1",
              chatId: "chat1",
-            content: "Salut, comment ça va ?",
+            content: "Salut, tu es ou?",
             type: TypeMessage.TEXT,
             ownership: "user",
             sender: "John",
@@ -64,7 +64,7 @@ export const chats: Chat[] = [
         lastMessage: {
             _id:"1",
              chatId: "chat1",
-            content: "Salut, comment ça va ?",
+            content: "Stp prend moi de la glace",
             type: TypeMessage.TEXT,
             ownership: "user",
             sender: "John",
@@ -91,7 +91,7 @@ export const chats: Chat[] = [
         lastMessage: {
             _id:"1",
              chatId: "chat1",
-            content: "Salut, comment ça va ?",
+            content: "Salut Bb , t'es ou?",
             type: TypeMessage.TEXT,
             ownership: "user",
             sender: "John",
@@ -118,7 +118,7 @@ export const chats: Chat[] = [
         lastMessage: {
             _id:"1",
              chatId: "chat1",
-            content: "Salut, comment ça va ?",
+            content: "Salut, fais moi momo 234$ ",
             type: TypeMessage.TEXT,
             ownership: "user",
             sender: "John",
