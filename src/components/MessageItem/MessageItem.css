@@ -5,7 +5,9 @@
   Created At : 15/03/2024 11:09:42
 */
 
-.MessageItem {}
+.MessageItem {
+  
+}
 .unreadCount{
   background-color: darkgreen;
   color: aliceblue;

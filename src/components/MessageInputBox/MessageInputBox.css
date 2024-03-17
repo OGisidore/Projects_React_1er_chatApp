@@ -5,4 +5,20 @@
   Created At : 15/03/2024 11:09:42
 */
 
-.MessageInputBox {}
+.MessageInputBox {
+  border-top: .2rem solid #fdefee;
+  background-color: darkslategray;
+  color: aliceblue;
+  margin: 0;
+  align-items: center;
+  
+}
+.MessageInputBox :nth-child(1),
+.MessageInputBox :nth-child(3){
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+.MessageInputBox #message{
+  margin: 1rem 0;
+  outline: none;
+}

@@ -1,6 +1,6 @@
-import { createRequire } from "module";
+
 import { Profil } from "../models/Profil";
-import { User } from "../models/User";
+
 
 export const profils: Profil[] = [
   {
@@ -15,6 +15,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/john-doe.jpg",
     hours: "9am - 5pm",
     users: "20",
+    isUser:true,
+    connected : true,
     website: "https://www.abccompany.com",
   },
   {
@@ -27,9 +29,11 @@ export const profils: Profil[] = [
     description:
       "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     function: "Marketing Manager",
-    picture: "https://example.com/jane-smith.jpg",
+    picture: "https://cdn.pixabay.com/photo/2024/02/19/18/48/flower-8583970_960_720.jpg",
     hours: "8:30am - 6pm",
     users: "15",
+    isUser:false,
+    connected : true,
     website: "https://www.xyzcorp.com",
   },
   // Ajoutez d'autres profils ici si nécessaire
@@ -44,9 +48,11 @@ export const profils: Profil[] = [
     description:
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     function: "Sales Representative",
-    picture: "https://example.com/alice-johnson.jpg",
+    picture: "https://cdn.pixabay.com/photo/2020/07/19/15/42/peony-5420406_640.jpg",
     hours: "10am - 4pm",
     users: "10",
+    isUser:false,
+    connected : false,
     website: "https://www.xyzcorp.com",
   },
   {
@@ -59,9 +65,11 @@ export const profils: Profil[] = [
     description:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     function: "Software Engineer",
-    picture: "https://example.com/bob-brown.jpg",
+    picture:  "https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492_640.jpg",
     hours: "Flexible",
     users: "5",
+    isUser:false,
+    connected : true,
     website: "https://www.defcorp.com",
   },
 
@@ -75,9 +83,11 @@ export const profils: Profil[] = [
     description:
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     function: "Human Resources Manager",
-    picture: "https://example.com/emily-williams.jpg",
+    picture: "https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_640.jpg",
     hours: "9am - 5pm",
     users: "25",
+    isUser:false,
+    connected : true,
     website: "https://www.ghi-enterprises.com",
   },
   {
@@ -90,9 +100,11 @@ export const profils: Profil[] = [
     description:
       "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
     function: "Project Manager",
-    picture: "https://example.com/michael-davis.jpg",
+    picture: "https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_640.jpg",
     hours: "8am - 6pm",
     users: "30",
+    isUser:false,
+    connected : true,
     website: "https://www.jklsolutions.com",
   },
 
@@ -106,9 +118,11 @@ export const profils: Profil[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     function: "Sales Manager",
-    picture: "https://example.com/sophia-martinez.jpg",
+    picture: "https://cdn.pixabay.com/photo/2016/01/08/11/57/butterflies-1127666_640.jpg",
     hours: "9am - 5pm",
     users: "18",
+    isUser:false,
+    connected : false,
     website: "https://www.lmn-enterprises.com",
   },
   {
@@ -121,9 +135,11 @@ export const profils: Profil[] = [
     description:
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     function: "Software Developer",
-    picture: "https://example.com/daniel-wilson.jpg",
+    picture: "https://cdn.pixabay.com/photo/2016/02/17/19/08/lotus-1205631_640.jpg",
     hours: "10am - 6pm",
     users: "12",
+    isUser:false,
+    connected : false,
     website: "https://www.opqsolutions.com",
   },
   {
@@ -136,9 +152,11 @@ export const profils: Profil[] = [
     description:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     function: "Marketing Director",
-    picture: "https://example.com/olivia-taylor.jpg",
+    picture: "https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_640.jpg",
     hours: "8:30am - 5:30pm",
     users: "22",
+    isUser:false,
+    connected : false,
     website: "https://www.rstcorp.com",
   },
   {
@@ -151,9 +169,11 @@ export const profils: Profil[] = [
     description:
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     function: "Financial Analyst",
-    picture: "https://example.com/william-anderson.jpg",
+    picture: "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
     hours: "9am - 6pm",
     users: "17",
+    isUser:false,
+    connected : true,
     website: "https://www.uvwcorp.com",
   },
 
@@ -167,9 +187,11 @@ export const profils: Profil[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     function: "Customer Service Representative",
-    picture: "https://example.com/emma-rodriguez.jpg",
+    picture:  "https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492_640.jpg",
     hours: "9am - 5pm",
     users: "20",
+    isUser:false,
+    connected : true,
     website: "https://www.xyzcorp.com",
   },
   {
@@ -185,6 +207,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/ethan-garcia.jpg",
     hours: "10am - 6pm",
     users: "15",
+    isUser:false,
+    connected : true,
     website: "https://www.abcsolutions.com",
   },
   {
@@ -200,6 +224,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/ava-martinez.jpg",
     hours: "8:30am - 5:30pm",
     users: "10",
+    isUser:false,
+    connected : true,
     website: "https://www.lmncorp.com",
   },
   {
@@ -215,6 +241,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/noah-lopez.jpg",
     hours: "9am - 6pm",
     users: "12",
+    isUser:false,
+    connected : true,
     website: "https://www.pqrenterprises.com",
   },
   {
@@ -230,6 +258,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/isabella-perez.jpg",
     hours: "9am - 5pm",
     users: "25",
+    isUser:false,
+    connected : true,
     website: "https://www.rstsolutions.com",
   },
   {
@@ -245,6 +275,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/mason-hernandez.jpg",
     hours: "8am - 6pm",
     users: "17",
+    isUser:false,
+    connected : true,
     website: "https://www.uvwcorp.com",
   },
 
@@ -261,6 +293,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/liam-garcia.jpg",
     hours: "9am - 5pm",
     users: "20",
+    isUser:false,
+    connected : true,
     website: "https://www.xyzsolutions.com",
   },
   {
@@ -276,6 +310,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/charlotte-martinez.jpg",
     hours: "10am - 6pm",
     users: "15",
+    isUser:false,
+    connected : true,
     website: "https://www.abcenterprises.com",
   },
   {
@@ -291,6 +327,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/amelia-wilson.jpg",
     hours: "8:30am - 5:30pm",
     users: "10",
+    isUser:false,
+    connected : true,
     website: "https://www.lmnsolutions.com",
   },
   {
@@ -306,6 +344,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/james-rodriguez.jpg",
     hours: "9am - 6pm",
     users: "12",
+    isUser:false,
+    connected : true,
     website: "https://www.pqrcorp.com",
   },
   {
@@ -319,8 +359,10 @@ export const profils: Profil[] = [
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
     function: "Marketing Specialist",
     picture: "https://example.com/grace-lopez.jpg",
-    hours: "9am - 5pm",
+    hours: "9am - 5pm", 
     users: "25",
+    isUser:false,
+    connected : true,
     website: "https://www.rstenterprises.com",
   },
   {
@@ -336,6 +378,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/benjamin-taylor.jpg",
     hours: "8am - 6pm",
     users: "17",
+    isUser:false,
+    connected : true,
     website: "https://www.uvwsolutions.com",
   },
   {
@@ -351,6 +395,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/alexander-hernandez.jpg",
     hours: "9am - 5pm",
     users: "20",
+    isUser:false,
+    connected : true,
     website: "https://www.defcorp.com",
   },
   {
@@ -366,6 +412,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/mia-brown.jpg",
     hours: "10am - 6pm",
     users: "15",
+    isUser:false,
+    connected : true,
     website: "https://www.ghicorp.com",
   },
   {
@@ -381,6 +429,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/lucas-perez.jpg",
     hours: "8:30am - 5:30pm",
     users: "10",
+    isUser:false,
+    connected : true,
     website: "https://www.jklenterprises.com",
   },
   {
@@ -396,6 +446,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/zoe-taylor.jpg",
     hours: "9am - 6pm",
     users: "12",
+    isUser:false,
+    connected : true,
     website: "https://www.mnosolutions.com",
   },
   {
@@ -411,6 +463,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/elijah-anderson.jpg",
     hours: "9am - 5pm",
     users: "25",
+    isUser:false,
+    connected : true,
     website: "https://www.pqrsolutions.com",
   },
   {
@@ -426,6 +480,8 @@ export const profils: Profil[] = [
     picture: "https://example.com/scarlett-hernandez.jpg",
     hours: "8am - 6pm",
     users: "17",
+    isUser:false,
+    connected : true,
     website: "https://www.rstenterprises.com",
   },
 ];

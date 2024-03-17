@@ -7,6 +7,9 @@
 import React, { FC, useEffect,Fragment, useState } from 'react';
 // import Loading from '../Loading/Loading';
 import './Login.css';
+import Header from '../../components/Header/Header';
+import { Link } from 'react-router-dom';
+import { BsArrowLeft } from 'react-icons/bs';
 
 
 interface LoginProps {
@@ -34,7 +37,7 @@ const Login : FC<LoginProps> = () =>{
     <Fragment>
     {
       <div className="Login">
-          Login Component
+          <Header iconType={<Link to={"/"}><BsArrowLeft/></Link>} pageTitle={"Login"} />
       </div>
     }
     </Fragment>

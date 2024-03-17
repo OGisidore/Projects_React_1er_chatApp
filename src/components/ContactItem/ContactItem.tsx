@@ -6,14 +6,18 @@
 */
 import React, { FC, useEffect } from 'react';
 import './ContactItem.css';
+import { Profil } from '../../models/Profil';
+import { Link } from 'react-router-dom';
+import { BsDot, BsFillCameraFill, BsFillCameraVideoFill, BsTelephoneFill } from 'react-icons/bs';
 
 
 interface ContactItemProps {
+  contact:Profil
  
 }
 
 
-const ContactItem : FC<ContactItemProps> = () =>{
+const ContactItem : FC<ContactItemProps> = ({contact}) =>{
 
 
 
@@ -26,8 +30,22 @@ const ContactItem : FC<ContactItemProps> = () =>{
     })
 
   return (
-      <div className="ContactItem">
-          ContactItem Component
+      <div className="Contactcontact">
+          <Link to={"/message/" +( parseInt(contact._id!) - 1)} className="Messagecontact border-bottom d-flex justify-content-between p-2">
+        <div className="message d-flex align-contacts-center p-1">
+          <img src={contact.picture} alt={contact.fullName} height={50} width={50} className='rounded-circle' />
+          <div className="sender px-1">
+            <h3>{contact.fullName}</h3>
+            <p><BsDot className={'BsDot ' + (contact.connected? "Enligne":"") }/>{contact.connected? "En ligne":"hors ligne"} </p>
+          </div>
+        </div>
+        <div className="action gap-2 d-flex justify-content-between align-items-center ">
+          <BsTelephoneFill/>
+          <BsFillCameraVideoFill/>
+          
+
+        </div>
+      </Link>
       </div>
   );
 }

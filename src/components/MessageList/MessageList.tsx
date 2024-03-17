@@ -39,7 +39,7 @@ const MessageList : FC<MessageListProps> = () =>{
       <div className="MessageList">
          {
           chats.map((message : Chat, index : number)=> {
-            return <MessageItem Item={message}/>
+            return <MessageItem key={index} Item={message}/>
           }
         )
 

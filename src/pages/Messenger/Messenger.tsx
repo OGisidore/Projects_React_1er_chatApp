@@ -15,6 +15,8 @@ import Header from '../../components/Header/Header';
 import { BsArrowBarLeft, BsArrowLeft, BsArrowUpLeft, BsBoxArrowLeft } from 'react-icons/bs';
 import MessageList from '../../components/MessageList/MessageList';
 import ChatList from '../../components/ChatList/ChatList';
+import MessageInputBox from '../../components/MessageInputBox/MessageInputBox';
+import { Profil } from '../../models/Profil';
 
 
 interface MessengerProps {
@@ -30,21 +32,23 @@ const Messenger : FC<MessengerProps> = () =>{
     const [value, setValue] = useState('');
     let {slug} = useParams()
     let contact : Chat;
+    let profil : Profil;
     if (slug) {
       contact = chats.filter((chat:Chat)=> chat._id === slug?.toString())[0]
      console.log(contact);
+     profil = contact.participants[1].profile
      
       
       
     }
     const Title = ()=>{
-      return <div className='d-flex gap-2'>
+      return <Link to={"/userprofil/" + profil._id} className='d-flex gap-2'>
         <img src={contact.imageUrl} alt={contact.participants[1].fullName} className='rounded-circle' height={40} width={40} />
         <div className="desc">
           <h2>{contact.participants[1].fullName}</h2>
           <p>En ligne</p>
         </div>
-      </div>
+      </Link>
 
     }
     
@@ -64,6 +68,7 @@ const Messenger : FC<MessengerProps> = () =>{
       <div className="Messenger">
          <Header iconType={<Link to={"/"}><BsArrowLeft/></Link>} pageTitle={Title()} />
          <ChatList lastMessage={contact!.lastMessage} />
+         <MessageInputBox/>
       </div>
     }
     </Fragment>

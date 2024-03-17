@@ -6,8 +6,11 @@
 */
 
 .ChatList {
+
+  background-color: darkslategrey !important;
+
   display: flex;
   padding: 1rem;
   flex-direction: column;
-  max-height: 80vh;
+  height: 90vh;
 }

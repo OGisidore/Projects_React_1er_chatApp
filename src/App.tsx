@@ -15,9 +15,9 @@ function App() {
       <Routes>
         <Route path ='/' element={<Home/>}/>
         <Route path='/contact' element={<Contacts/>}/>
-         <Route path='/userprofil' element={<UserProfil/>}/>
+         <Route path='/userprofil/:slug' element={<UserProfil/>}/>
        / <Route path='/message/:slug' element={<Messenger/>}/> 
-        {/* <Route path='/chat' element={<ChatBox/>}/>  */} 
+        <Route path='/login' element={<Login/>}/>  
         {/* <Route path='/reader/:slug' element={<ChatBox/>}/>
          <Route path ='/*' element={<ErrorPage/>}/> */}
 

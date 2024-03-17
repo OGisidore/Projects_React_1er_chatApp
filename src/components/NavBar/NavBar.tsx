@@ -8,6 +8,7 @@ import React, { FC, useEffect } from 'react';
 import './NavBar.css';
 import { Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { users } from '../../Api/users';
 
 
 interface NavBarProps {
@@ -42,7 +43,7 @@ const NavBar : FC<NavBarProps> = ({hideModal}) =>{
                 <Link className="nav-link active" aria-current="page" to="/contact">Contact</Link>
                 </li>
                 <li className='nav-item'>
-                <Link className="nav-link active" aria-current="page" to="/userprofil">Profil</Link>
+                <Link className="nav-link active" aria-current="page" to={"/userprofil/" + users[0]._id}>Profil</Link>
                 </li>
                 <li className='nav-item'>
                 <Link className="nav-link active" aria-current="page" to="/login">Log out</Link>

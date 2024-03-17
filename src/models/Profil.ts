@@ -9,6 +9,8 @@ export interface Profil {
   function: string;
   picture: string;
   hours: string;
+  isUser: boolean;
+  connected? : boolean;  
   users: string;
   website: string;
 }

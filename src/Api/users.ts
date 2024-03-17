@@ -19,9 +19,10 @@ export const users :User[] =  [
           phone: "555-123-4567",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           function: "CEO",
-          picture: "https://example.com/john-doe.jpg",
+          picture: "/assets/images/_ce60a446-9b18-4b5e-868c-f920099acdf5.jpeg",
           hours: "9am - 5pm",
           users: "20",
+          isUser:true,
           website: "https://www.abccompany.com"
         },
         password: "ojfnbo",
@@ -47,6 +48,7 @@ export const users :User[] =  [
           picture: "https://cdn.pixabay.com/photo/2024/02/19/18/48/flower-8583970_960_720.jpg",
           hours: "8:30am - 6pm",
           users: "15",
+          isUser:false,
           website: "https://www.xyzcorp.com"
         },
         password: "opb0vt",
@@ -72,6 +74,7 @@ export const users :User[] =  [
           picture: "https://cdn.pixabay.com/photo/2020/07/19/15/42/peony-5420406_640.jpg",
           hours: "10am - 4pm",
           users: "10",
+          isUser:false,
           website: "https://www.xyzcorp.com"
         },
         password: "tkorx",
@@ -97,6 +100,7 @@ export const users :User[] =  [
           picture: "https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492_640.jpg",
           hours: "Flexible",
           users: "5",
+          isUser:false,
           website: "https://www.defcorp.com"
         },
         password: "8v5o3d",
@@ -122,6 +126,7 @@ export const users :User[] =  [
           picture: "https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_640.jpg",
           hours: "9am - 5pm",
           users: "25",
+          isUser:false,
           website: "https://www.ghi-enterprises.com"
         },
         password: "tj7ti4",
@@ -147,6 +152,7 @@ export const users :User[] =  [
           picture: "https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_640.jpg",
           hours: "8am - 6pm",
           users: "30",
+          isUser:false,
           website: "https://www.jklsolutions.com"
         },
         password: "4bkug",
@@ -172,6 +178,7 @@ export const users :User[] =  [
           picture: "https://cdn.pixabay.com/photo/2016/01/08/11/57/butterflies-1127666_640.jpg",
           hours: "9am - 5pm",
           users: "18",
+          isUser:false,
           website: "https://www.lmn-enterprises.com"
         },
         password: "hytt1",
@@ -197,6 +204,7 @@ export const users :User[] =  [
           picture: "https://cdn.pixabay.com/photo/2016/02/17/19/08/lotus-1205631_640.jpg",
           hours: "10am - 6pm",
           users: "12",
+          isUser:false,
           website: "https://www.opqsolutions.com"
         },
         password: "n5ol8s",
@@ -222,6 +230,7 @@ export const users :User[] =  [
           picture: "https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_640.jpg",
           hours: "8:30am - 5:30pm",
           users: "22",
+          isUser:false,
           website: "https://www.rstcorp.com"
         },
         password: "ltvttm",
@@ -247,6 +256,7 @@ export const users :User[] =  [
           picture: "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
           hours: "9am - 6pm",
           users: "17",
+          isUser:false,
           website: "https://www.uvwcorp.com"
         },
         password: "m4rwjg",
@@ -272,6 +282,7 @@ export const users :User[] =  [
           picture: "https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492_640.jpg",
           hours: "9am - 5pm",
           users: "20",
+          isUser:false,
           website: "https://www.xyzcorp.com"
         },
         password: "4jdp3k",
@@ -297,6 +308,7 @@ export const users :User[] =  [
           picture: "https://example.com/ethan-garcia.jpg",
           hours: "10am - 6pm",
           users: "15",
+          isUser:false,
           website: "https://www.abcsolutions.com"
         },
         password: "lw6oy",
@@ -322,6 +334,7 @@ export const users :User[] =  [
           picture: "https://example.com/ava-martinez.jpg",
           hours: "8:30am - 5:30pm",
           users: "10",
+          isUser:false,
           website: "https://www.lmncorp.com"
         },
         password: "v8y6f",
@@ -347,6 +360,7 @@ export const users :User[] =  [
           picture: "https://example.com/noah-lopez.jpg",
           hours: "9am - 6pm",
           users: "12",
+          isUser:false,
           website: "https://www.pqrenterprises.com"
         },
         password: "c0q9aa",
@@ -372,6 +386,7 @@ export const users :User[] =  [
           picture: "https://example.com/isabella-perez.jpg",
           hours: "9am - 5pm",
           users: "25",
+          isUser:false,
           website: "https://www.rstsolutions.com"
         },
         password: "3udmy",
@@ -397,6 +412,7 @@ export const users :User[] =  [
           picture: "https://example.com/mason-hernandez.jpg",
           hours: "8am - 6pm",
           users: "17",
+          isUser:false,
           website: "https://www.uvwcorp.com"
         },
         password: "h26x2",
@@ -422,6 +438,7 @@ export const users :User[] =  [
           picture: "https://example.com/liam-garcia.jpg",
           hours: "9am - 5pm",
           users: "20",
+          isUser:false,
           website: "https://www.xyzsolutions.com"
         },
         password: "hxlilp",
@@ -447,6 +464,7 @@ export const users :User[] =  [
           picture: "https://example.com/charlotte-martinez.jpg",
           hours: "10am - 6pm",
           users: "15",
+          isUser:false,
           website: "https://www.abcenterprises.com"
         },
         password: "hfktqg",
@@ -472,6 +490,7 @@ export const users :User[] =  [
           picture: "https://example.com/amelia-wilson.jpg",
           hours: "8:30am - 5:30pm",
           users: "10",
+          isUser:false,
           website: "https://www.lmnsolutions.com"
         },
         password: "6ujy2g",
@@ -497,6 +516,7 @@ export const users :User[] =  [
           picture: "https://example.com/james-rodriguez.jpg",
           hours: "9am - 6pm",
           users: "12",
+          isUser:false,
           website: "https://www.pqrcorp.com"
         },
         password: "yynvrn",
@@ -522,6 +542,7 @@ export const users :User[] =  [
           picture: "https://example.com/grace-lopez.jpg",
           hours: "9am - 5pm",
           users: "25",
+          isUser:false,
           website: "https://www.rstenterprises.com"
         },
         password: "azmu1f",
@@ -547,6 +568,7 @@ export const users :User[] =  [
           picture: "https://example.com/benjamin-taylor.jpg",
           hours: "8am - 6pm",
           users: "17",
+          isUser:false,
           website: "https://www.uvwsolutions.com"
         },
         password: "tp2d0j",
@@ -572,6 +594,7 @@ export const users :User[] =  [
           picture: "https://example.com/alexander-hernandez.jpg",
           hours: "9am - 5pm",
           users: "20",
+          isUser:false,
           website: "https://www.defcorp.com"
         },
         password: "2zjou",
@@ -597,6 +620,7 @@ export const users :User[] =  [
           picture: "https://example.com/mia-brown.jpg",
           hours: "10am - 6pm",
           users: "15",
+          isUser:false,
           website: "https://www.ghicorp.com"
         },
         password: "0iq999",
@@ -622,6 +646,7 @@ export const users :User[] =  [
           picture: "https://example.com/lucas-perez.jpg",
           hours: "8:30am - 5:30pm",
           users: "10",
+          isUser:false,
           website: "https://www.jklenterprises.com"
         },
         password: "kjfjrg",
@@ -647,6 +672,7 @@ export const users :User[] =  [
           picture: "https://example.com/zoe-taylor.jpg",
           hours: "9am - 6pm",
           users: "12",
+          isUser:false,
           website: "https://www.mnosolutions.com"
         },
         password: "uqbny",
@@ -672,6 +698,7 @@ export const users :User[] =  [
           picture: "https://example.com/elijah-anderson.jpg",
           hours: "9am - 5pm",
           users: "25",
+          isUser:false,
           website: "https://www.pqrsolutions.com"
         },
         password: "x1l0q",
@@ -697,6 +724,7 @@ export const users :User[] =  [
           picture: "https://example.com/scarlett-hernandez.jpg",
           hours: "8am - 6pm",
           users: "17",
+          isUser:false,
           website: "https://www.rstenterprises.com"
         },
         password: "xh2qw9",

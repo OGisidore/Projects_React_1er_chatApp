@@ -5,4 +5,16 @@
   Created At : 15/03/2024 11:09:42
 */
 
-.ContactItem {}
+.ContactItem p {
+  padding: 0;
+}
+.BsDot{
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 2rem;
+  color: red;
+
+}
+.BsDot.Enligne{
+  color: blue;
+}

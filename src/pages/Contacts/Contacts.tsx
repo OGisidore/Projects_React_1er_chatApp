@@ -7,6 +7,10 @@
 import React, { FC, useEffect,Fragment, useState } from 'react';
 // import Loading from '../Loading/Loading';
 import './Contacts.css';
+import Header from '../../components/Header/Header';
+import { Link } from 'react-router-dom';
+import { BsArrowLeft } from 'react-icons/bs';
+import ContactList from '../../components/ContactList/ContactList';
 
 
 interface ContactsProps {
@@ -34,7 +38,8 @@ const Contacts : FC<ContactsProps> = () =>{
     <Fragment>
     {
       <div className="Contacts">
-          Contacts Component
+          <Header iconType={<Link to={"/"}><BsArrowLeft/></Link>} pageTitle={"Contact"} />
+          <ContactList/>
       </div>
     }
     </Fragment>

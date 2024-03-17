@@ -6,6 +6,10 @@
 */
 import React, { FC, useEffect } from 'react';
 import './ContactList.css';
+import { profile } from 'console';
+import { profils } from '../../Api/profils';
+import { Profil } from '../../models/Profil';
+import ContactItem from '../ContactItem/ContactItem';
 
 
 interface ContactListProps {
@@ -15,7 +19,7 @@ interface ContactListProps {
 
 const ContactList : FC<ContactListProps> = () =>{
 
-
+ const contacts : Profil[] = profils.filter((profil:Profil)=> !profil.isUser)
 
     useEffect(() => {
       window.scrollTo(0,0)
@@ -27,7 +31,12 @@ const ContactList : FC<ContactListProps> = () =>{
 
   return (
       <div className="ContactList">
-          ContactList Component
+         {
+          contacts.map((profil : Profil, index:number)=>{
+             return <ContactItem key={index} contact={profil}/>
+          }
+         )
+         }
       </div>
   );
 }

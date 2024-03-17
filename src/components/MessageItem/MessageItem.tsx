@@ -36,7 +36,7 @@ const MessageItem : FC<MessageItemProps> = ({Item}) =>{
     })
 
   return (
-      <Link to={"/message/" + Item._id} className="MessageItem d-flex justify-content-between p-2">
+      <Link to={"/message/" + Item._id} className="MessageItem border-bottom d-flex justify-content-between p-2">
         <div className="message d-flex align-items-center p-1">
           <img src={Item.imageUrl} alt={Item.lastMessage.sender} height={50} width={50} className='rounded-circle' />
           <div className="sender px-1">

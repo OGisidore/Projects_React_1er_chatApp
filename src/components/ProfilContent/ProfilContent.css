@@ -6,3 +6,23 @@
 */
 
 .ProfilContent {}
+.profilUser{
+  height: 15rem;
+}
+.cameraAndImage{
+  width: 10rem;
+  position: relative;
+}
+.camera{
+  background-color: green;
+  color: aliceblue;
+  width: fit-content;
+  font-size: 2rem;
+  position: absolute;
+  bottom: -5px;
+  right: 5px;
+
+}
+/* .infos{
+  padding-top: 4rem;
+} */
