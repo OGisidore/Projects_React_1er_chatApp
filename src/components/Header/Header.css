@@ -6,7 +6,7 @@
 */
 
 .Header {
-  background-color: darkgreen;
+  background-color: var(--color-primary);
   color: aliceblue !important;
 }
 .Icon *{

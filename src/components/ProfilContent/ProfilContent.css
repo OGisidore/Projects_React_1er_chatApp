@@ -14,7 +14,7 @@
   position: relative;
 }
 .camera{
-  background-color: green;
+  background-color: var(--color-primary);
   color: aliceblue;
   width: fit-content;
   font-size: 2rem;

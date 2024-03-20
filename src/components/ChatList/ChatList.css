@@ -9,8 +9,8 @@
 
   background-color: darkslategrey !important;
 
-  display: flex;
+  /* display: flex; */
   padding: 1rem;
-  flex-direction: column;
+  /* flex-direction: column; */
   height: 90vh;
 }

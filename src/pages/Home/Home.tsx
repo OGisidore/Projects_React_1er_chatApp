@@ -7,7 +7,6 @@
 import React, { FC, useEffect, useState,  } from 'react';
 // import Loading from '../Loading/Loading';
 import './Home.css';
-import Header from '../../components/Header/Header';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import NavBar from '../../components/NavBar/NavBar';
 import MessageList from '../../components/MessageList/MessageList';
@@ -47,7 +46,7 @@ const Home : FC<HomeProps> = () =>{
 
   return (
     <div className="home">
-      <Header iconType={icon()} pageTitle={"MudeyApp"}/>
+   
    <div className="content">
     {displayNav && <NavBar hideModal={()=>setDisplayNav(false)}/>}
    

@@ -18,10 +18,15 @@
   align-self: self-end;
   max-width: 70%;
   height: auto;
-  background-color: green;
+  background-color: var(--color-primary);
   color: #fff;
 }
 .time{
   opacity: 0.75;
+  font-style: italic;
+  /* text-align: right; */
+}
+.user .time{
+  
   text-align: right;
 }

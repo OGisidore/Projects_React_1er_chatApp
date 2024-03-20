@@ -44,7 +44,7 @@ const MessageItem : FC<MessageItemProps> = ({Item}) =>{
             <p>{cutMessage} </p>
           </div>
         </div>
-        <div className="timeCount gap-2 ">
+        <div className="timeCount d-flex gap-2 ">
           <p>{Item.time} </p>
           {(Item.unreadCount!) > 1?  <p className='rounded-circle  unreadCount'> {Item.unreadCount}</p>: ""}
 

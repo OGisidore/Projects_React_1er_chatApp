@@ -7,8 +7,8 @@
 
 .MessageInputBox {
   border-top: .2rem solid #fdefee;
-  background-color: darkslategray;
-  color: aliceblue;
+  background-color:#fdefee;
+  /* color: aliceblue; */
   margin: 0;
   align-items: center;
   

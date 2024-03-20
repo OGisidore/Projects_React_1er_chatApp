@@ -5,11 +5,7 @@
   Created At : 15/03/2024 11:06:19
 */
 import React, { FC, useEffect,Fragment, useState } from 'react';
-// import Loading from '../Loading/Loading';
-import './Contacts.css';
-import Header from '../../components/Header/Header';
-import { Link } from 'react-router-dom';
-import { BsArrowLeft } from 'react-icons/bs';
+// import Loading from '../Loading/Lo
 import ContactList from '../../components/ContactList/ContactList';
 
 
@@ -23,8 +19,7 @@ const Contacts : FC<ContactsProps> = () =>{
 
     // const [state, setState] = useState<any>(null)
     const [loading, setLoading] = useState(true);
-    const [value, setValue] = useState('');
-
+   
     useEffect(() => {
       window.scrollTo(0,0)
       const runLocalData = async () => {
@@ -32,13 +27,16 @@ const Contacts : FC<ContactsProps> = () =>{
         setLoading(false)
       }
       runLocalData()
-    },[value])
+    },[])
+
+    
+    
 
   return (
     <Fragment>
     {
       <div className="Contacts">
-          <Header iconType={<Link to={"/"}><BsArrowLeft/></Link>} pageTitle={"Contact"} />
+        
           <ContactList/>
       </div>
     }

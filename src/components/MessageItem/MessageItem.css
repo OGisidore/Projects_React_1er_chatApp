@@ -9,7 +9,7 @@
   
 }
 .unreadCount{
-  background-color: darkgreen;
+  background-color: var(--color-primary);
   color: aliceblue;
   height: 1.5rem;
   width: 1.5rem;
@@ -19,13 +19,13 @@ p,h3{
   margin-bottom: 0 !important;
 }
 .timeCount{
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   
   /* justify-content: end; */
   align-items: end;
 }
 .timeCount p:nth-child(1){
-  color: darkgreen;
+  color: var(--color-primary);
   font-weight: bold;
 }

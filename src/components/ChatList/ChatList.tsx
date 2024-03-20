@@ -35,7 +35,7 @@ const ChatList : FC<ChatListProps> = ({lastMessage}) =>{
     })
 
   return (
-      <div className="ChatList overflow-auto ">
+      <div className="ChatList d-flex flex-column overflow-auto ">
          {
           Discussion.map((message:Message,index:number)=>{
             return <ChatItem key={index} messageItem={message}/>

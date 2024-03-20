@@ -6,12 +6,13 @@ import Contacts from './pages/Contacts/Contacts';
 import UserProfil from './pages/UserProfil/UserProfil';
 import Login from './pages/Login/Login';
 import Messenger from './pages/Messenger/Messenger';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <BrowserRouter>
     
-   
+    <Header/>
       <Routes>
         <Route path ='/' element={<Home/>}/>
         <Route path='/contact' element={<Contacts/>}/>
