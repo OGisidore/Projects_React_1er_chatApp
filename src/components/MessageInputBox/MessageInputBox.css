@@ -6,19 +6,30 @@
 */
 
 .MessageInputBox {
-  border-top: .2rem solid #fdefee;
-  background-color:#fdefee;
-  /* color: aliceblue; */
+  height: 10%;
   margin: 0;
-  align-items: center;
+  
   
 }
 .MessageInputBox :nth-child(1),
 .MessageInputBox :nth-child(3){
-  font-size: 2rem;
-  margin: 0 1rem;
+  font-size: 4rem;
+  color: var(--color-primary);
+  /* margin: 0 1rem; */
 }
 .MessageInputBox #message{
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
+  
+  font-size: 5rem;
   outline: none;
 }
+.MessageInputBox #message :focus{
+  border: none;
+  outline: none;
+}
+textarea::placeholder {
+  font-size: 1rem; 
+  color: #999; /* Couleur du texte du placeholder */
+  font-style: italic; /* Style de police italique pour le placeholder (optionnel) */
+}
+

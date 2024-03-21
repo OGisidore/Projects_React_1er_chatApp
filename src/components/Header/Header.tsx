@@ -44,7 +44,7 @@ const Header : FC<HeaderProps> = () =>{
         <h1>MudeyApp</h1>
         :
         location.pathname.startsWith('/message') ?
-        "Chat"
+        <MessengerContact/>
        
         :
         location.pathname.startsWith('/userprofil') ?

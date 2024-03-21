@@ -26,7 +26,7 @@ const Messenger : FC<MessengerProps> = () =>{
     // const [state, setState] = useState<any>(null)
     
     let {slug} = useParams()
-    let contact : Chat;
+     var contact : Chat;
     let profil : Profil;
     if (slug) {
       contact = chats.filter((chat:Chat)=> chat._id === slug?.toString())[0]

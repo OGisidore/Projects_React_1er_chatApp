@@ -5,4 +5,6 @@
   Created At : 15/03/2024 11:06:19
 */
 
-.Messenger {}
+.Messenger {
+  height: calc(100vh - 5rem);
+}
