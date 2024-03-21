@@ -5,7 +5,9 @@
   Created At : 16/03/2024 11:50:12
 */
 
-.NavBar {}
+.NavBar {
+  position: absolute !important;
+}
 .modal{
   width: 15rem !important;
   right:10px !important;

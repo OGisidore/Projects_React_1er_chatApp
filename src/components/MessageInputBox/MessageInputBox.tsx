@@ -29,7 +29,7 @@ const MessageInputBox : FC<MessageInputBoxProps> = () =>{
   return (
       <div className="MessageInputBox px-2 sticky-bottom d-flex align-items-center justify-content-around">
          <BsEmojiHeartEyesFill/>
-         <textarea name="message" id="message " placeholder='type your message here....' className='px-3 d-flex align-items-center mx-2 rounded-pill' cols={90} rows={2}></textarea>
+         <textarea name="message" id="message " placeholder='type your message here....' className='px-3 py-1 d-flex align-items-center mx-2 rounded-pill' cols={90} rows={1} ></textarea>
          <BsSendFill/>
       </div>
   );

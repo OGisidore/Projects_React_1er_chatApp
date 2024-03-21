@@ -53,7 +53,6 @@ const UserProfil : FC<UserProfilProps> = () =>{
     {
       
       <div className="UserProfil">
-        <Header iconType={<Link to={"/"}><BsArrowLeft/></Link>} pageTitle={"Profil"} />
           <ProfilContent Userprofil={profil!}/>
       </div>
     }

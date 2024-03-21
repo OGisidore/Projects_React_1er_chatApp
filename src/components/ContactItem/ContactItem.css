@@ -9,12 +9,17 @@
   padding: 0;
 }
 .BsDot{
+  line-height: 0;
   padding: 0 !important;
   margin: 0 !important;
-  font-size: 2rem;
+  font-size: 3rem;
   color: red;
 
 }
 .BsDot.Enligne{
-  color: blue;
+  color: green;
+}
+.action {
+  font-size: 1.5rem;
+  color: var(--color-primary);
 }

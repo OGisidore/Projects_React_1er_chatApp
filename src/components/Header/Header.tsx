@@ -4,14 +4,13 @@
   App Name : E-commerce with React.Js
   Created At : 15/03/2024 11:09:42
 */
-import React, { FC, useEffect } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import './Header.css';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { BsArrowLeft, BsThreeDotsVertical } from 'react-icons/bs';
-import { chats } from '../../Api/chats';
-import { Chat } from '../../models/Chat';
-import { Profil } from '../../models/Profil';
+
 import MessengerContact from '../MessengerContact/MessengerContact';
+import NavBar from '../NavBar/NavBar';
 
 
 interface HeaderProps {
@@ -22,8 +21,12 @@ interface HeaderProps {
 
 
 const Header : FC<HeaderProps> = () =>{
+  const [displayNav , setDisplayNav]= useState<boolean>(false)
 
     const location = useLocation()
+    const handledisplayNavBar = ()=>{
+      setDisplayNav(true)
+    }
 
 
     useEffect(() => {
@@ -50,22 +53,31 @@ const Header : FC<HeaderProps> = () =>{
         location.pathname.startsWith('/userprofil') ?
         <h1>Profil</h1>
         :
-        null
+        location.pathname.startsWith('/contact') ?
+        <h1>Contacts</h1>
+        :
+        location.pathname.startsWith('/login') ?
+        <h1>Login</h1>
+        : null
       }
           </div>
 
-
+          
 
           {
             location.pathname == '/'?
             <div className="Icon">
-            <BsThreeDotsVertical />
+            <BsThreeDotsVertical onClick={handledisplayNavBar} />
           </div>
             :
             <div className="Icon">
-            <BsArrowLeft/>
+              <Link to={"/"}>
+                <BsArrowLeft/>
+              </Link>
+            
           </div>
           }
+          {location.pathname == '/' && displayNav && <NavBar hideModal={()=>setDisplayNav(false)}/>}
          
       </div>
   );

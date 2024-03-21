@@ -13,11 +13,12 @@
 }
 .MessageInputBox :nth-child(1),
 .MessageInputBox :nth-child(3){
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--color-primary);
   /* margin: 0 1rem; */
 }
 .MessageInputBox #message{
+  row-gap: 1;
   /* margin: 1rem 0; */
   
   font-size: 5rem;
@@ -28,6 +29,7 @@
   outline: none;
 }
 textarea::placeholder {
+  /* padding: .5rem; */
   font-size: 1rem; 
   color: #999; /* Couleur du texte du placeholder */
   font-style: italic; /* Style de police italique pour le placeholder (optionnel) */

@@ -34,9 +34,9 @@ const ContactItem : FC<ContactItemProps> = ({contact}) =>{
           <Link to={"/message/" +( parseInt(contact._id!) - 1)} className="Messagecontact border-bottom d-flex justify-content-between p-2">
         <div className="message d-flex align-contacts-center p-1">
           <img src={contact.picture} alt={contact.fullName} height={50} width={50} className='rounded-circle' />
-          <div className="sender px-1">
+          <div className="sender px-3">
             <h3>{contact.fullName}</h3>
-            <p><BsDot className={'BsDot ' + (contact.connected? "Enligne":"") }/>{contact.connected? "En ligne":"hors ligne"} </p>
+            <p><strong className={'BsDot ' + (contact.connected? "Enligne":"") }>.</strong> {contact.connected? "En ligne":"Hors ligne"} </p>
           </div>
         </div>
         <div className="action gap-2 d-flex justify-content-between align-items-center ">

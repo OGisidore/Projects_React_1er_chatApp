@@ -18,14 +18,3 @@
 p,h3{
   margin-bottom: 0 !important;
 }
-.timeCount{
-  /* display: flex; */
-  flex-direction: column;
-  
-  /* justify-content: end; */
-  align-items: end;
-}
-.timeCount p:nth-child(1){
-  color: var(--color-primary);
-  font-weight: bold;
-}

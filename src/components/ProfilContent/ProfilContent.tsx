@@ -45,7 +45,7 @@ const ProfilContent : FC<ProfilContentProps> = ({Userprofil}) =>{
             <div className="infos">
               <ProfilContentInfo content={Userprofil.fullName} iconType={<BsPersonFill/>} isWritable={ Userprofil.isUser? true:false}/>
               <ProfilContentInfo content={Userprofil.email} iconType={<BsChatSquareFill/>} isWritable={ Userprofil.isUser? true:false}/>
-              <ProfilContentInfo content={Userprofil.function} iconType={<BsInfoCircleFill/>} isWritable={ Userprofil.isUser? true:false}/>
+              <ProfilContentInfo content={"info"} iconType={<BsInfoCircleFill/>} isWritable={ Userprofil.isUser? true:false}/>
               <ProfilContentInfo content={Userprofil.phone} iconType={<BsTelephoneFill/>} isWritable={ Userprofil.isUser? true:false}/>
             </div>
       </div>

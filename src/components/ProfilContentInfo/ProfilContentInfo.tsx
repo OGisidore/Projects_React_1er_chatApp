@@ -35,7 +35,7 @@ const ProfilContentInfo : FC<ProfilContentInfoProps> = ({iconType,content,isWrit
             {iconType}
             <p> {content}</p>
           </div>
-          {isWritable && <BsPencilFill/>}
+          {isWritable && <BsPencilFill className='pencil'/>}
       </div>
   );
 }

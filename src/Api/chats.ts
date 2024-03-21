@@ -25,7 +25,7 @@ export const chats: Chat[] = [
         notSpan:false,
         message:"hello jane !",
         imageUrl : users[1].profile.picture,
-        time :"10:00 AM",
+        time :"13:01",
         created_at: new Date(),
         updated_at: new Date()
 
@@ -52,7 +52,7 @@ export const chats: Chat[] = [
         notSpan:false,
         message:"hello jane !",
         imageUrl : users[2].profile.picture,
-        time :"10:00 AM",
+        time :"12:27",
         created_at: new Date(),
         updated_at: new Date()
 
@@ -79,7 +79,7 @@ export const chats: Chat[] = [
         notSpan:false,
         message:"hello jane !",
         imageUrl : users[3].profile.picture,
-        time :"10:00 AM",
+        time :"12:07",
         created_at: new Date(),
         updated_at: new Date()
 
@@ -106,7 +106,7 @@ export const chats: Chat[] = [
         notSpan:false,
         message:"hello jane !",
         imageUrl : users[4].profile.picture,
-        time :"10:00 AM",
+        time :"11:30",
         created_at: new Date(),
         updated_at: new Date()
 
@@ -133,7 +133,7 @@ export const chats: Chat[] = [
         notSpan:false,
         message:"hello jane !",
         imageUrl : users[5].profile.picture,
-        time :"10:00 AM",
+        time :"22:00",
         created_at: new Date(),
         updated_at: new Date()
 
@@ -160,7 +160,7 @@ export const chats: Chat[] = [
         notSpan:false,
         message:"hello jane !",
         imageUrl : users[6].profile.picture,
-        time :"10:00 AM",
+        time :"17:00",
         created_at: new Date(),
         updated_at: new Date()
 
@@ -187,7 +187,7 @@ export const chats: Chat[] = [
         notSpan:false,
         message:"hello jane !",
         imageUrl : users[7].profile.picture,
-        time :"10:00 AM",
+        time :"09:00",
         created_at: new Date(),
         updated_at: new Date()
 
@@ -214,7 +214,7 @@ export const chats: Chat[] = [
         notSpan:false,
         message:"hello jane !",
         imageUrl : users[8].profile.picture,
-        time :"10:00 AM",
+        time :"15:00",
         created_at: new Date(),
         updated_at: new Date()
 
@@ -241,7 +241,7 @@ export const chats: Chat[] = [
         notSpan:false,
         message:"hello jane !",
         imageUrl : users[9].profile.picture,
-        time :"10:00 AM",
+        time :"20:00",
         created_at: new Date(),
         updated_at: new Date()
 
@@ -268,7 +268,88 @@ export const chats: Chat[] = [
         notSpan:false,
         message:"hello jane !",
         imageUrl : users[10].profile.picture,
-        time :"10:00 AM",
+        time :"10:00",
+        created_at: new Date(),
+        updated_at: new Date()
+
+
+    },
+    {
+        _id: "8",
+        participants: [users[0], users[8]],
+        lastMessage: {
+            _id:"1",
+             chatId: "chat1",
+            content: "Salut, comment ça va ?",
+            type: TypeMessage.TEXT,
+            ownership: "user",
+            sender: "John",
+            shared: false,
+            create_at: new Date(),
+            updated_at: new Date()
+        },
+        unreadCount:1,
+        unreadMentionCount : 0,
+        isAutoMuted : false,
+        archive: false,
+        notSpan:false,
+        message:"hello jane !",
+        imageUrl : users[8].profile.picture,
+        time :"15:00",
+        created_at: new Date(),
+        updated_at: new Date()
+
+
+    },
+    {
+        _id: "9",
+        participants: [users[0], users[9]],
+        lastMessage: {
+            _id:"1",
+             chatId: "chat1",
+            content: "Salut, comment ça va ?",
+            type: TypeMessage.TEXT,
+            ownership: "user",
+            sender: "John",
+            shared: false,
+            create_at: new Date(),
+            updated_at: new Date()
+        },
+        unreadCount:1,
+        unreadMentionCount : 0,
+        isAutoMuted : false,
+        archive: false,
+        notSpan:false,
+        message:"hello jane !",
+        imageUrl : users[9].profile.picture,
+        time :"20:00",
+        created_at: new Date(),
+        updated_at: new Date()
+
+
+    },
+    {
+        _id: "10",
+        participants: [users[0], users[10]],
+        lastMessage: {
+            _id:"1",
+             chatId: "chat1",
+            content: "Salut, comment ça va ?",
+            type: TypeMessage.TEXT,
+            ownership: "user",
+            sender: "John",
+            shared: false,
+            create_at: new Date(),
+            updated_at: new Date()
+        },
+        unreadCount:1,
+        unreadMentionCount : 0,
+        isAutoMuted : false,
+        archive: false,
+        notSpan:false,
+        message:"hello jane !",
+        imageUrl : users[10].profile.picture,
+        time :"10:00",
         created_at: new Date(),
         updated_at: new Date()
 

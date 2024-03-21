@@ -38,7 +38,6 @@ const Login : FC<LoginProps> = () =>{
     <Fragment>
     {
       <div className="Login">
-          <Header iconType={<Link to={"/"}><BsArrowLeft/></Link>} pageTitle={"Login"} />
           <LoginForm/>
       </div>
     }

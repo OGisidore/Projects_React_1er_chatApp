@@ -39,14 +39,14 @@ const MessageItem : FC<MessageItemProps> = ({Item}) =>{
       <Link to={"/message/" + Item._id} className="MessageItem border-bottom d-flex justify-content-between p-2">
         <div className="message d-flex align-items-center p-1">
           <img src={Item.imageUrl} alt={Item.lastMessage.sender} height={50} width={50} className='rounded-circle' />
-          <div className="sender px-1">
+          <div className="sender px-3">
             <h3>{fullname}</h3>
             <p>{cutMessage} </p>
           </div>
         </div>
-        <div className="timeCount d-flex gap-2 ">
+        <div className="timeCount d-flex gap-2 align-self-end ">
           <p>{Item.time} </p>
-          {(Item.unreadCount!) > 1?  <p className='rounded-circle  unreadCount'> {Item.unreadCount}</p>: ""}
+          {/* {(Item.unreadCount!) > 1?  <p className='rounded-circle  unreadCount'> {Item.unreadCount}</p>: ""} */}
 
         </div>
       </Link>

@@ -30,7 +30,7 @@ const NavBar : FC<NavBarProps> = ({hideModal}) =>{
     })
 
   return (
-      <div className="NavBar">
+      <div className="NavBar absolute">
        
          <Modal  show={true} className='modalnav'>
           <Modal.Header>
@@ -40,13 +40,13 @@ const NavBar : FC<NavBarProps> = ({hideModal}) =>{
             <nav>
               <ul className='navbar-nav'>
                 <li className='nav-item'>
-                <Link className="nav-link active" aria-current="page" to="/contact">Contact</Link>
+                <Link className="nav-link active" aria-current="page" onClick={hideModal} to="/contact">Contact</Link>
                 </li>
                 <li className='nav-item'>
-                <Link className="nav-link active" aria-current="page" to={"/userprofil/" + users[0]._id}>Profil</Link>
+                <Link className="nav-link active" aria-current="page" onClick={hideModal} to={"/userprofil/" + users[0]._id}>Profil</Link>
                 </li>
                 <li className='nav-item'>
-                <Link className="nav-link active" aria-current="page" to="/login">Log out</Link>
+                <Link className="nav-link active" aria-current="page" onClick={hideModal} to="/login">Log out</Link>
                 </li> 
               </ul>
             </nav>

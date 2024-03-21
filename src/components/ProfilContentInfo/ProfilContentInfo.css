@@ -7,9 +7,10 @@
 
 .ProfilContentInfo {
 }
-.infoContent{
+.infoContent,
+.pencil{
   font-size: 20px;
-  color: green;
+  color: var(--color-primary);
 }
 .infoContent p{
   color: black;

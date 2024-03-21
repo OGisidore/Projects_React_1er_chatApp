@@ -10,6 +10,7 @@ import { Link, useLocation, useParams } from 'react-router-dom';
 import { Chat } from '../../models/Chat';
 import { Profil } from '../../models/Profil';
 import { chats } from '../../Api/chats';
+import { BsDot } from 'react-icons/bs';
 
 
 interface MessengerContactProps {
@@ -27,11 +28,14 @@ const MessengerContact : FC<MessengerContactProps> = () =>{
  
   let slug = elementApresMessage
   let contact :any;
-  let profil : Profil;
-  if (slug) {
+ var profil : any;
+  if (slug) { 
+    
     contact = chats.filter((chat:Chat)=> chat._id === slug?.toString())[0]
    console.log(contact);
    profil = contact.participants[1].profile
+   console.log(profil);
+   
    
   }
   
@@ -47,7 +51,8 @@ const MessengerContact : FC<MessengerContactProps> = () =>{
     <img src={contact?.imageUrl} alt={contact?.participants[1].fullName} className='rounded-circle' height={40} width={40} />
     <div className="desc">
       <h2>{contact?.participants[1].fullName}</h2>
-      <p>En ligne</p>
+      <p><strong className={'BsDot ' + (profil?.connected? "Enligne":"") }>.</strong>{profil?.connected? "En ligne":"hors ligne"} </p>
+      
     </div>
   </div>
   
