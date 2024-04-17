@@ -17,13 +17,12 @@ Bienvenue dans le projet ChatApp ! Cette application vous permet de discuter en 
 
 - **Frontend:** React avec TypeScript
 - **Stockage de Données:** EsperoDB
-- **Librairies Frontend:** (le cas échéant, ajoutez ici les principales librairies utilisées)
 
 ---
 
 ## Installation et Configuration
 
-1. **Clonez le Répertoire:** `git clone https://github.com/votre-utilisateur/chatapp-react-ts.git`
+1. **Clonez le Répertoire:** `git clone https://github.com/OGisidore/Projects_React_1er_chatApp.git`
 2. **Installez les Dépendances:** `npm install`
 3. **Lancez l'Application:** `npm start`
 
